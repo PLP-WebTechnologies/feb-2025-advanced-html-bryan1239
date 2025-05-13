@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Multimedia-Rich Webpage with Audio and Video</title>
+  <style>
+    /* Basic styling for better visualization */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+    }
+
+    form button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #45a049;
+    }
+
+    /* Audio and Video Styling */
+    audio, video {
+      width: 100%;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Multimedia-Rich Webpage</h1>
+
+    <!-- Ordered list with Roman numerals -->
+    <h2>Ordered List with Roman Numerals</h2>
+    <ol type="I">
+      <li>First item</li>
+      <li>Second item</li>
+      <li>Third item</li>
+      <li>Fourth item</li>
+    </ol>
+
+    <!-- External Image -->
+    <h2>External Image</h2>
+    <img src="https://images.pexels.com/photos/1234567/pexels-photo-1234567.jpeg" alt="Toyota Supra Mk5" width="600">
+
+
+    <!-- Table of Contacts -->
+    <h2>Contact List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Mobile</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John Mulei</td>
+          <td> Lower Kabete</td>
+          <td>0700-000-000</td>
+          <td>johnmulei@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Jane Kamau</td>
+          <td>Karen </td>
+          <td>0700-000-001</td>
+          <td>janekamau@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Sam Tum</td>
+          <td>Ngong Race course</td>
+          <td>0700-000-002</td>
+          <td>samtum@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Alice Atieno</td>
+          <td>kilimani</td>
+          <td>0700-000-003</td>
+          <td>aliceatieno@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Bob Owino</td>
+          <td>Runda</td>
+          <td>0700-000-004</td>
+          <td>bobotieno@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="#" method="POST">
+      <!-- Name Field -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <!-- Email Field -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <!-- Password Field -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+      <!-- Date Field -->
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <!-- Dropdown Menu -->
+      <label for="country">Select Country:</label>
+      <select id="country" name="country" required>
+        <option value="usa">United States</option>
+        <option value="canada">Canada</option>
+        <option value="uk">United Kingdom</option>
+        <option value="australia">Australia</option>
+      </select>
+
+      <!-- Radio Buttons -->
+      <fieldset>
+        <legend>Gender:</legend>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+      </fieldset>
+
+      <!-- Checkboxes -->
+      <fieldset>
+        <legend>Preferences:</legend>
+        <label for="newsletter">Subscribe to newsletter</label>
+        <input type="checkbox" id="newsletter" name="newsletter">
+        <label for="updates">Receive updates</label>
+        <input type="checkbox" id="updates" name="updates">
+      </fieldset>
+
+      <!-- Submit Button -->
+      <button type="submit">Register</button>
+    </form>
+
+    <!-- Audio Element -->
+    <h2>Audio Example</h2>
+    <audio controls>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Video Element -->
+    <h2>Video Example</h2>
+    <video controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+  </div>
+
+</body>
+</html>
